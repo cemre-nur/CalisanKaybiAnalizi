@@ -1,7 +1,5 @@
 # Power BI ile Çalışan Kaybı Analizi
 Bu proje, IBM veri setini kullanarak bir işletmedeki çalışan kaybı (attrition) süreçlerini Power BI ile analiz etmek amacıyla hazırlanmıştır.
-# Power BI ile Çalışan Kaybı Analizi
-Bu proje, IBM veri setini kullanarak bir işletmedeki çalışan kaybı (attrition) süreçlerini Power BI ile analiz etmek amacıyla hazırlanmıştır.
 
 # 1. Veri Kaynağı ve Hazırlık Süreci
 Araştırmada kullanılan veri seti, IBM tarafından oluşturulan ve CC0 (Creative Commons Zero) lisansı ile kamuya sunulan HR Analytics Employee Attrition & Performance veri kümesidir. Bu veri seti; bir işletmedeki 1470 çalışana ait yaş, maaş, departman, iş tatmini ve fazla mesai gibi 35 farklı özniteliği detaylı bir şekilde içermektedir. Veri seti yapısal olarak eksiksiz ve analize hazır bir formatta temin edildiği için kapsamlı bir veri temizleme veya satır silme işlemi yapılmasına gerek duyulmamıştır.
