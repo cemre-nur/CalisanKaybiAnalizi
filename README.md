@@ -7,10 +7,13 @@ Araştırmada kullanılan veri seti, IBM tarafından oluşturulan ve CC0 (Creati
 # 2. Veri Modelleme
 Bu çalışma kapsamında, verilerin analiz edilebilirliğini artırmak ve Power BI üzerinde performanslı bir raporlama yapısı kurabilmek amacıyla “Yıldız Şeması" mimarisi tercih edilmiştir. Modelin merkezinde EmployeeAttrition tablosu yer almaktadır. Bu tablo, çalışmaya konu olan çalışan kaybı (attrition) verilerini ve temel performans göstergelerini barındıran Fact tablosudur. Çevresinde ise Dim_Employee, Dim_Job, Dim_Survey, Dim_WorkConfig ve Dim_Education gibi dimension tabloları bulunmaktadır. Dim_Job, Dim_Survey, Dim_WorkConfig ve Dim_Education gibi boyut tabloları ile ana tablo olan EmployeeAttrition arasında bire-çok (1:*) ilişkiler kurulmuştur. Dim_Employee tablosu ile ana tablo arasında bire-bir (1:1) bir ilişki tercih edilmiştir. 
 
+<img width="1243" height="733" alt="Ekran görüntüsü 2026-01-28 214251" src="https://github.com/user-attachments/assets/e5a0a0e1-da19-4f28-ba2a-7ae54671978d" />
+
+
 # 3. KONUYA AİT GRAFİKLER VE RAPORLAR
   # 3.1. Genel Bakış:
 
-  ![alt text](image.png)
+  <img width="1302" height="732" alt="Ekran görüntüsü 2026-01-28 210911" src="https://github.com/user-attachments/assets/71b5f920-c984-4b35-945c-c1dc105af2ba" />
 
   Aşağıda kullanılan her bir görselin amacı, teknik altyapısı ve iş analizi yer almaktadır:
 1.	Toplam Çalışan Sayısı (KPI Kartı): Bu gösterge, şirketin sahip olduğu toplam çalışan sayısını görmek ve diğer oranların hesaplanmasında temel değer olarak kullanmak amacıyla oluşturulmuştur. Şirkette aktif ve pasif olmak üzere toplam 1470 benzersiz çalışan bulunmaktadır. Bu sayı, yapılan analizlerin sağlıklı sonuçlar vermesi için yeterli bir veri setine sahip olduğumuzu göstermektedir.
@@ -40,7 +43,7 @@ Ayrılan Sayısı = CALCULATE(COUNTROWS('EmployeeAttrition'), 'EmployeeAttrition
 
   # 3.2. Demografik Analiz:
 
-  ![alt text](image-1.png)
+  <img width="1305" height="732" alt="Ekran görüntüsü 2026-01-28 210927" src="https://github.com/user-attachments/assets/f4fb3a49-877b-44e4-b982-3226cb41469e" />
 
   Aşağıda kullanılan her bir görselin amacı, teknik altyapısı ve iş analizi yer almaktadır:
 
@@ -65,7 +68,7 @@ Toplam Personel Sayısı = DISTINCTCOUNT(EmployeeAttrition[EmployeeNumber])
 
   # 3.3. Finansal Etki ve Performans:
 
-  ![alt text](image-2.png)
+<img width="1307" height="732" alt="Ekran görüntüsü 2026-01-28 210945" src="https://github.com/user-attachments/assets/7f9b2b14-5ebb-49e4-9fc5-f6c4e569be2c" />
 
   Aşağıda kullanılan her bir görselin amacı, teknik altyapısı ve iş analizi yer almaktadır:
 1.	En Yüksek Maaşlı 10 Çalışanın Toplam Maliyeti (KPI Kartı): Şirketin en yüksek maliyetli (ve muhtemelen en kıdemli) çalışan grubunun toplam finansal hacmini saptamak. İlk 10 çalışanın aylık toplam maliyetinin 198,68 bin (B) birim olduğu görülmektedir. Bu grup, şirketin en büyük yetenek yatırımıdır ve bu kişilerin kaybı finansal açıdan en yüksek riski temsil eder.
@@ -92,7 +95,7 @@ Ayrılan Sayısı = CALCULATE(COUNTROWS('EmployeeAttrition'), 'EmployeeAttrition
 
   # 3.4. Çalışma Ortamı ve Memnuniyet:
 
-  ![alt text](image-3.png)
+  <img width="1307" height="733" alt="Ekran görüntüsü 2026-01-28 210956" src="https://github.com/user-attachments/assets/5de1f66b-f3f6-4ea6-835b-ea9da36300b4" />
 
   Aşağıda kullanılan her bir görselin amacı, teknik altyapısı ve iş analizi yer almaktadır:
 1.	Pozisyon Bazlı Performans Dağılımı (Matris Tablo): İşten ayrılan 237 personelin performans düzeylerini unvan bazında detaylandırmak. Ayrılanlar arasında 200 kişinin "İyi" (3), 37 kişinin ise "Üstün" (4) performans notuna sahip olduğu görülmektedir. Özellikle Laboratuvar Teknisyeni ve Satış Yöneticisi rollerindeki yüksek performanslı kayıplar, şirketin nitelikli iş gücünü tutundurmada zorlandığını kanıtlamaktadır. Şirket sadece çalışan kaybetmemekte, aynı zamanda "yıldız" olarak nitelendirilebilecek personellerini de kaybetmektedir.
@@ -120,7 +123,7 @@ Toplam Personel Sayısı = DISTINCTCOUNT(EmployeeAttrition[EmployeeNumber])
 
   # 3.5. Risk Analizi ve Gelecek Öngörüsü:
 
-  ![alt text](image-4.png)
+<img width="1305" height="732" alt="Ekran görüntüsü 2026-01-28 211006" src="https://github.com/user-attachments/assets/c7bdd777-cc8a-40a4-aa7b-7daac39753be" />
 
   Aşağıda kullanılan her bir görselin amacı, teknik altyapısı ve iş analizi yer almaktadır:
 1.	Yüksek Riskli Personel Sayısı ve Tahmini Kayıp Maliyeti (KPI Kartları): Henüz ayrılmamış ancak ayrılma potansiyeli çok yüksek olan çalışan sayısını ve bu kişilerin kaybının yıllık toplam maliyetini saptamak. Şirkette aktif olarak çalışan 123 personelin "Yüksek Risk" grubunda olduğu saptanmıştır. Eğer bu risk gerçekleşirse, şirketin yıllık tahmini kaybı 9,60 Milyon (M) birim olacaktır. Bu rakam, tutundurma politikalarına ayrılacak bütçenin ne kadar kritik olduğunu rakamsal olarak kanıtlar.
